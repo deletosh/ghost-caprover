@@ -20,7 +20,7 @@ services:
     ports:
       - '80:2368'
     volumes:
-      - 'ghost-cms_data:/bitnami/ghost'
+      - 'ghost-cms-data:/bitnami/ghost'
     depends_on:
       - ghost-mysql
     environment:
@@ -31,5 +31,5 @@ services:
       - GHOST_DATABASE_USER=ghost-cms
       - GHOST_DATABASE_NAME=ghost-cms
 volumes:
-  mysql_ghost-cms_data: {}
-  ghost-cms_data: {}
+  mysql-ghost-cms-data: {}
+  ghost-cms-data: {}
